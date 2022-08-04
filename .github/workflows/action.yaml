@@ -11,7 +11,7 @@ jobs:
 
   custom_test:
     runs-on: ubuntu-latest
-    name: Run a test of our GitHub Action
+    name: An example workflow as a help file on how to use this GitHub Action
     steps:
       - name: Get page_id
         uses: raelldottin/glitch-me-visitor-count-incrementor@main
