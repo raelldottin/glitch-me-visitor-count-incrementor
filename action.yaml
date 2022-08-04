@@ -1,0 +1,12 @@
+name: Glitch Me Visitor Count Incrementor
+description: Fetches your glitch me link
+inputs:
+  page_id:
+    description: your github username
+    required: true
+    default: raelldottin
+runs:
+  using: docker
+  image: Dockerfile
+  args:
+    - ${{ inputs.page_id }}
