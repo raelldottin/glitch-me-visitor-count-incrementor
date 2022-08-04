@@ -1,5 +1,0 @@
-- name: Update badge counter
-  uses: ./
-  id: page
-  with:
-    page_id: raelldottin
