@@ -11,10 +11,10 @@ jobs:
 
   custom_test:
     runs-on: ubuntu-latest
-    name: We test it locally with act
+    name: Run a test of our GitHub Action
     steps:
       - name: Get page_id
-        uses: raelldottin/glitch-me-visitor-count-incrementor@v0.1
+        uses: raelldottin/glitch-me-visitor-count-incrementor@main
         id: page
         with:
           page_id: raelldottin
