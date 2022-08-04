@@ -1,13 +1,14 @@
 name: Our GitHub Action Test
 on:
   # Schedule visitor count updates (each minute)
-  schedule: [{cron: "*/1 * * * *"}]
+  schedule: [{cron: "0 * * * *"}]
   # The lines below allows you to run the workflow manually on ech commit
   # (optional)
   workflow_dispatch:
-    push: {branches: ["main"]}
+  push: {branches: ["main"]}
 
 jobs:
+
   custom_test:
     runs-on: ubuntu-latest
     name: We test it locally with act
@@ -15,5 +16,5 @@ jobs:
       - name: Get page_id
         uses: ./
         id: page
-      with:
-        page_id: raelldottin
+        with:
+          page_id: raelldottin
