@@ -1,4 +1,4 @@
-name: Our GitHub Action Test
+name: GitHub Action Example
 on:
   # Schedule visitor count updates (each minute)
   schedule: [{cron: "0 * * * *"}]
