@@ -14,7 +14,7 @@ jobs:
     name: We test it locally with act
     steps:
       - name: Get page_id
-        uses: ./
+        uses: raelldottin/glitch-me-visitor-count-incrementor@latest
         id: page
         with:
           page_id: raelldottin
